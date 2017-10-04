@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(192, 192, 192);
+    color: rgb(255, 255, 255);
+}
+
+p {
+    font-family: sans-serif;
+    color: black;
+}
+
+
+}
+title {
+    color: white;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 25pt;
+}
+h3 {
+    color: white;
+}
+table {
+    color: black;
+    border: 1px solid black;
+}
+a:visited {
+    background-color: mediumpurple;
+}
+a:hover {
+    background-color: yellow;
+}
+a:active {
+    background-color: red;
+}
