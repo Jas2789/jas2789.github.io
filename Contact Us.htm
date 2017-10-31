@@ -35,21 +35,24 @@
 
                
 
-                <form name="myForm" action="" onsubmit="return validateForm()" method="get">
-                        First Name: <input type="text" name="firstName"> 
-                        Last Name: <input type="text" name="lastName"> 
-                        Email: <input type="text" name="EMail" >
+                <form class = container name="myForm" action="" onsubmit="return validateForm()" method="get">
+                        First Name: <input type="text" name="firstName" > <br>
+                        Last Name:  <input type="text" name="lastName" > <br>
+                        Email:       <input type="text" name="EMail" ><br>
                     <br/>
-                    <input type="radio" name="Question"  />Question
-                    <input type="radio" name="Problem" />Problem
-                    <input type="radio" name="Order Status Update" />Order Status Update Comment: <input type="text" name="comment" />
+
 
                     <br/>
                     <input type="submit" value="Submit">
-                    <button type="reset">Reset</button>
+                    <input type="reset"value="Reset">
 
 
                 </form>
+    <form> <input type="radio" name="Question"  />Question
+        <input type="radio" name="Problem" />Problem
+        <input type="radio" name="Order Status Update" />
+        Order Status Update <br>
+        Comment:<input type="text" name="comment"  /></form>
 
                 <p style="text-align:center;"><img src="logo.png" alt="Repair Logo" img></p>
                 <p id="date"></p>

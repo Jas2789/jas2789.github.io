@@ -6,13 +6,19 @@
         if (document.forms["myForm"]["firstName"].value=="")
         { alert( "Please enter your first name.");
         document.getElementById("firstName").focus();
-        return false; }
+        return (false) }
         if (document.forms["myForm"]["lastName"].value=="" ) { alert( "Please enter your last name.");
             document.getElementById("lastName").focus();
-        return false; }
-        if (document.forms["myForm"]["EMail"].value=="" ) { alert( "Please enter your email.");
-            document.getElementById("EMail").focus();
-        return false; }
+            return(false)
+        }
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.EMail.value))
+        {
+            return (true)
+        }
+        else {
+            alert("You have entered an invalid email address!")
+            return (false)
+        }
     }
     function getDate() {
 
