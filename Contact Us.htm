@@ -7,13 +7,8 @@
     <title>Justin's Repair Store</title>
     <meta name="description" content="">
     <link rel="stylesheet" href=style.css type="text/css">
-     <script> function validateForm() 
-                    { var x= document.forms["myForm"]["firstName"].value;
-                     var y= document.forms["myForm"]["lastName"].value;
-                     var z= document.forms["myForm"]["EMail"].value; 
-                     if (x=="" ) { alert( "Criteria must be filled out"); return false; }
-                     if (y=="" ) { alert( "Last Name must be filled out"); return false; }
-                     if (z=="" ) { alert( "Email must be filled out"); return false; }></script>
+     <script src = javascript.js></script>
+  
 </head>
 
 
@@ -31,9 +26,9 @@
 
 <body>
 
-    <p style="text-align:center;"><img src="banner.png" alt="Repair Banner" /img></p>
+    <p style="text-align:center;"><img src="banner.png" alt="Repair Banner" img></p>
     <h1> Justin's Repair Store
-        <h1>
+        </h1>
             <h2> Contact Us</h2>
             <p>
                 <font size="4">Welcome! At Justin's Repair Store, we take pride on taking care of all our customers needs. If you have any questions, comments, or concerns feel to contact us and we will get back to you, by email, as quickly as possible.</font>
@@ -54,11 +49,15 @@
                     <button type="reset">Reset</button>
 
 
-
-
-
                 </form>
-                <p style="text-align:center;"><img src="logo.png" alt="Repair Logo" /img></p>
+
+                <p style="text-align:center;"><img src="logo.png" alt="Repair Logo" img></p>
+                <p id="date"></p>
+
+<script>getDate()</script>
+               
+
+
 </body>
 
 </html>
