@@ -3,13 +3,17 @@ body {
     color: rgb(255, 255, 255);
 }
 
+ input:focus {
+     background-color: yellow;
+ }
+
 p {
     font-family: sans-serif;
     color: black;
 }
 
 
-}
+
 title {
     color: white;
 }
@@ -37,26 +41,26 @@ a:hover {
     color: green;
 }
 a:active {
-    background-color: red;
+    background-color:red;
 }
 * {
     padding: 0;
-    margin: =0
+    margin: 0;
 }
 nav {
-    background-color: black;
+    background-color:black;
     height: 50px;
 }
 nav ul li {
-    list-style-type: none;
-    width: 225px;
-    float: left;
+    list-style-type:none;
+    width:225px;
+    float:left;
 }
 nav ul li a {
-    text-decoration: =none;
-    color: white;
-    line-height: 50px;
-    display: block;
-    border-right: 1px solid #ccc;
-    text-align: center;
+    text-decoration:none;
+    color:white;
+    line-height:50px;
+    display:block;
+    border-right:1px solid #ccc;
+    text-align:center;
 }
