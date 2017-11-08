@@ -27,3 +27,16 @@
 
 
     }
+
+function hoverFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+// will check to see if the bar is no longer clicked
+window.onclick = function(notClicked) {
+        if (!notClicked.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+            }
+        }
+    }

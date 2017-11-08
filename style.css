@@ -40,34 +40,76 @@ table {
     color: black;
     border: 1px solid black;
 }
-a:visited {
-    background-color: mediumpurple;
-}
-a:hover {
-    background-color: yellow;
-    color: green;
-}
-a:active {
-    background-color:red;
-}
-* {
-    padding: 0;
-    margin: 0;
-}
+
+
 nav {
-    background-color:black;
-    height: 50px;
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 3em;
 }
-nav ul li {
-    list-style-type:none;
-    width:225px;
-    float:left;
+
+article {
+    margin-left: 80px;
+    border-left: 1px white;
+    padding: 1em;
+    overflow: hidden;
 }
-nav ul li a {
-    text-decoration:none;
-    color:white;
-    line-height:50px;
-    display:block;
-    border-right:1px solid #ccc;
-    text-align:center;
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    font-family: Courier new;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: black;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: greenyellow;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color:greenyellow;
+}
+
+.show {
+    display: block;
 }
