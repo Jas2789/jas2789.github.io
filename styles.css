@@ -1,0 +1,13 @@
+html {
+    background-color: black
+}
+h1{
+    color:white
+}
+header {
+    text-align: center;
+}
+
+#winner {
+    margin-left: 350px;
+}
